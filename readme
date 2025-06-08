@@ -1,4 +1,2 @@
-## ✅ Communication Stage
-- ScannerA and ScannerB send word counts
-- Master receives and confirms with EOF
--agent1 and agent2 is looked out properly and analyzed correctly
+## ✅ Output Stage
+- Master prints final merged word counts from both agents
