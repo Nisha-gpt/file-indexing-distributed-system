@@ -1,7 +1,5 @@
-## ✅ ScannerA
-- Reads .txt files
-- Uses multithreading
-- Sends data via pipe `agent1`
-- Binds to CPU Core 0
-- I have added a 3 line code which can be enabled if you want to run the program without Master program.
-- 3 Line code can be enabled to make sure that it runs without Master program.
+## ✅ ScannerB Stage 1
+- Mirrors ScannerA
+- Communicates via pipe `agent2`
+- Binds to CPU Core 1
+-Can be run without Master Program
