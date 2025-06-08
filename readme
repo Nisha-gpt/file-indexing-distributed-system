@@ -1,3 +1,7 @@
-## ✅ Initial Setup
-- Created base folders for ScannerA, ScannerB, Master
-- Added README ( First verison ) and .gitignore
+## ✅ ScannerA
+- Reads .txt files
+- Uses multithreading
+- Sends data via pipe `agent1`
+- Binds to CPU Core 0
+- I have added a 3 line code which can be enabled if you want to run the program without Master program.
+- 3 Line code can be enabled to make sure that it runs without Master program.
