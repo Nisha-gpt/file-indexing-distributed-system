@@ -21,13 +21,9 @@ class ScannerB
         if (OperatingSystem.IsWindows())
     {
     // Affinity should be set only when using on windows ( preferably 1 )
-    Process.GetCurrentProcess().ProcessorAffinity = (IntPtr)(1 << 0);
+    Process.GetCurrentProcess().ProcessorAffinity = (IntPtr)(1 << 1);
     }
         string directoryPath = args[0];
-
-        Thread readThread = new(() => ReadFiles(directoryPath));
-        readThread.Start();
-        readThread.Join();
 
         // Same as mentioned in ScannerA ( can be opened when you want to run the program without Master Program)
         // Thread sendThread = new(SendDataToMaster);

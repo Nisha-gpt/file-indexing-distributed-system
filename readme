@@ -1,5 +1,7 @@
-## ✅ ScannerB Stage 1
-- Mirrors ScannerA
-- Communicates via pipe `agent2`
-- Binds to CPU Core 1
--Can be run without Master Program
+## ✅ Master Stage 1
+- Two named pipe servers (agent1, agent2)
+- Uses threads for parallel data collection
+- CPU bound to Core 2
+
+## ✅ Also uploaded the proper ScannerB with and without master program needed to run 
+ - CPU bound to core 1

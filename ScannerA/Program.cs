@@ -20,7 +20,7 @@ class ScannerA
 
     if (OperatingSystem.IsWindows())
     {
-    // Affinity should be set only when using on windows ( preferably 0 )
+    // Affinity should be set only when using on windows ( preferably 0)
     Process.GetCurrentProcess().ProcessorAffinity = (IntPtr)(1 << 0);
     }
 
