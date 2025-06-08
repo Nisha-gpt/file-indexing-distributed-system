@@ -1,2 +1,76 @@
-## ✅ Output Stage
-- Master prints final merged word counts from both agents
+# 📁 File Indexing Distributed System in C#
+
+## 📌 Project Overview
+
+This project implements a distributed file indexing system using C#. It consists of **three multithreaded console applications** that communicate through **named pipes**:
+
+- ScannerA: Reads and indexes `.txt` files and sends data via pipe `agent1`.
+- ScannerB: Same as ScannerA, uses pipe `agent2`.
+- Master: Listens to both pipes, receives indexed word data, merges and prints the final result.
+
+The project demonstrates:
+- 🔌 Inter-process communication (Named Pipes)
+- 🧵 Multi-threaded processing
+- 🧠 CPU Affinity (Processor Binding)
+- 📊 Merging indexed word counts from distributed sources
+
+---
+
+## 🚀 How to Run
+
+1. Compile all projects:
+( dotnet build ) after completing checking all the errors and compiling.
+
+2. Run Master first:
+dotnet run -- agent1 agent2
+
+3. Run ScannerA:
+dotnet run -- \testfile
+
+4. Run ScannerB:
+dotnet run -- \testfile
+
+5. Now return to Master terminal you will find your output
+
+---
+
+## 📤 Output Example
+
+```
+📊 Final Word Index:
+fileA.txt:hello:5
+fileB.txt:world:7
+```
+
+---
+
+## 🧵 Multithreading
+
+- ScannerA/B: One thread reads files, one thread sends data.
+- Master: Two threads listen concurrently on both named pipes.
+
+---
+
+## 🧠 CPU Affinity
+
+- ScannerA → Core 0
+- ScannerB → Core 1
+- Master → Core 2
+
+---
+
+## 📚 Submission Files
+
+- 📄 UML Diagram
+- 🧾 Test Report
+- 🖼️ Screenshots
+- 🧠 Source
+- 📦 ZIP file 
+---
+
+## 👤 Author
+
+Name: NISHA MURALI
+GitHub Repo: https://github.com/Nisha-gpt/file-indexing-distributed-system
+OOP LABWORK C# Final Project – 2025
+
