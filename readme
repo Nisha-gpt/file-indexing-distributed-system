@@ -1,7 +1,4 @@
-## ✅ Master Stage 1
-- Two named pipe servers (agent1, agent2)
-- Uses threads for parallel data collection
-- CPU bound to Core 2
-
-## ✅ Also uploaded the proper ScannerB with and without master program needed to run 
- - CPU bound to core 1
+## ✅ Communication Stage
+- ScannerA and ScannerB send word counts
+- Master receives and confirms with EOF
+-agent1 and agent2 is looked out properly and analyzed correctly
